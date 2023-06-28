@@ -59,4 +59,4 @@ jobs:
       - name: Publishing to NPM
         run: npm --prefix ${{matrix.path}} run publish-to-npm
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
