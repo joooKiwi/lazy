@@ -4,12 +4,13 @@
 name: Node.js Package
 
 on:
+  workflow_dispatch:
   push:
     branches: main
-    paths: 'javascript/**'
+    paths: javascript/**
   pull_request:
     branches: main
-    paths: 'javascript/**'
+    paths: javascript/**
 
 jobs:
   build:
@@ -17,7 +18,7 @@ jobs:
     strategy:
       matrix:
         node-version: [20.x]
-        path: './javascript/'
+        path: [./javascript/]
 
     steps:
       - name: Checkout of the repository
@@ -40,7 +41,7 @@ jobs:
     strategy:
       matrix:
         node-version: [20.x]
-        path: './javascript/'
+        path: [./javascript/]
 
     steps:
       - name: Checkout of the repository
@@ -56,6 +57,6 @@ jobs:
         run: npm --prefix ${{matrix.path}} ci
 
       - name: Publishing to NPM
-        run: npm --prefix ${{matrix.path}} publish-to-npm
+        run: npm --prefix ${{matrix.path}} run publish-to-npm
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
