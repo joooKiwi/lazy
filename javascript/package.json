@@ -17,7 +17,7 @@
     "test-implementation": "jest --testNamePattern=LazyImplementationTest",
 
     "test-pack":    "npm pack --dry-run",
-    "test-publish": "npm publish-to-npm --@access=public --dry-run",
+    "test-publish": "npm run publish-to-npm --@access=public --dry-run",
 
     "pack": "npm pack",
 
@@ -25,7 +25,7 @@
     "local-publish":    "npm link",
 
     "prepublish-to-npm": "npm run build",
-    "publish-to-npm": "npm publish-to-npm --access=public"
+    "publish-to-npm": "npm run publish-to-npm --access=public"
   },
 
   "directories": {
