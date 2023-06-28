@@ -6,10 +6,10 @@ name: Node.js Package
 on:
   push:
     branches: main
-    paths: javascript
+    paths: 'javascript/**'
   pull_request:
     branches: main
-    paths: javascript
+    paths: 'javascript/**'
 
 jobs:
   build:
