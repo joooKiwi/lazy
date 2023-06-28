@@ -51,12 +51,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node-version}}
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
 
       - name: Installation of the dependencies (for NPM)
         run: npm --prefix ${{matrix.path}} ci
 
       - name: Publishing to NPM
         run: npm --prefix ${{matrix.path}} run publish-to-npm
-        env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
