@@ -1,11 +1,39 @@
 # Lazy (javascript version)
 
+## Table of content
+* [Installation](#installation)
+* [Usage](#usage)
+  * [Lazy value](#lazy-value)
+  * [Non-lazy value](#non-lazy-value)
+* [Contribution](#contribution)
+
 This project is a simple implementation of the [Kotlin Lazy](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-lazy/).
 And if in any shape or form, there is a NPM usage from the Kotlin team itself, this will become deprecated.
 
 With that clarified, here is how it can be used.
 
-## Lazy value
+## Installation
+```
+npm install @joookiwi/lazy
+npm i @joookiwi/lazy
+
+npm install --save @joookiwi/lazy
+npm i -S @joookiwi/lazy
+
+npm install --save-dev @joookiwi/lazy
+npm i -D @joookiwi/lazy
+```
+
+## Usage
+The usage is similar to the kotlin usage like `val value by lazy { someValue }` in kotlin
+as well as the non-lazy implementation like `val value = lazyOf(someValue)`.
+
+But since there is no apparent dependency toward this specifically.
+Here is a simple implementation of the lazy via 2 functions
+ - `lazy` to load the value later
+ - `lazyOf` to have a `Lazy` but with an already loaded value
+
+### Lazy value
 
 Utilising the lazy value will always return a `Lazy` object holding a value.
 
@@ -17,7 +45,7 @@ firstValue.isInitialized // false
 firstValue.value         // 2
 firstValue.isInitialized // true
 ```
-## Non-lazy value
+### Non-lazy value
 
 If the value is already known, then just use `lazyOf()` in order to have a `Lazy` with an already loaded value.
 
@@ -29,3 +57,8 @@ firstValue.isInitialized // true
 firstValue.value         // 2
 firstValue.isInitialized // true
 ```
+
+## Contribution
+You can contribute to great simple packages.
+All with similar behaviour across different languages (like Java, Kotlin, C# and PHP).
+It can be done via my [GitHub sponsor](https://github.com/sponsors/joooKiwi).
