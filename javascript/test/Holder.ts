@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2023. Jonathan Bédard ~ JóôòKiwi
+ *
+ * This project is free to use.
+ * All the right is reserved to the author of this project.
+ ******************************************************************************/
+
 /** A simple class made to hold the necessary values for the tests */
 export class Holder<const T, const MESSAGE extends string, const EXPECTED_THROW_MESSAGE extends string, > {
 
