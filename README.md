@@ -1,4 +1,4 @@
-# Collection
+# Lazy
 
 This project has the purpose to have a similar implementation depending on the language used.
 It can be from `Javascript`, `Java`, `Kotlin`, `PHP` and even `C#`.
