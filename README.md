@@ -11,13 +11,13 @@ This project only has the Javascript (with Typescript) uploaded.
 
 But other languages will be eventually added
 
-| Language                  | Published                                                                                                 |
-|---------------------------|-----------------------------------------------------------------------------------------------------------|
-| Javascript<br/>Typescript | [Published to npm](https://www.npmjs.com/package/@joookiwi/lazy)                                          |
-| Java                      | Maven                                                                                                     |
-| Kotlin                    | [Integrated in the language](https://kotlinlang.org/docs/delegated-properties.html#observable-properties) |
-| PHP                       | Composer                                                                                                  |
-| C#                        | Nugget                                                                                                    |
+| Language                  | Published                                                                                                                                                                                      |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Javascript<br/>Typescript | [Published to npm](https://www.npmjs.com/package/@joookiwi/lazy)<br/>[![downloads](https://img.shields.io/npm/dt/@joookiwi/lazy.svg)](https://npm-stat.com/charts.html?package=@joookiwi/lazy) |
+| Java                      | Maven                                                                                                                                                                                          |
+| Kotlin                    | [Integrated in the language](https://kotlinlang.org/docs/delegated-properties.html#observable-properties)                                                                                      |
+| PHP                       | Composer                                                                                                                                                                                       |
+| C#                        | Nugget                                                                                                                                                                                         |
 
 
 ## Version history
