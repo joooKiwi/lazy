@@ -5,7 +5,8 @@
  All the right is reserved to the author of this project.
  ******************************************************************************/
 
-import {lazy, lazyOf} from "./index"
+import {lazy}   from "./method/lazy"
+import {lazyOf} from "./method/lazyOf"
 
 /** The common {@link Lazy} that could be used */
 export namespace CommonLazy {
