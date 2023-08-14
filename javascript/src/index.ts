@@ -1,8 +1,8 @@
 /*******************************************************************************
- * Copyright (c) 2023. Jonathan Bédard ~ JóôòKiwi
- *
- * This project is free to use.
- * All the right is reserved to the author of this project.
+ Copyright (c) 2023. Jonathan Bédard ~ JóôòKiwi
+
+ This project is free to use.
+ All the right is reserved to the author of this project.
  ******************************************************************************/
 
 import type {Lazy} from "./Lazy"
@@ -10,7 +10,8 @@ import type {Lazy} from "./Lazy"
 import {InitializedLazy}    from "./InitializedLazy"
 import {LazyImplementation} from "./LazyImplementation"
 
-export type {Lazy} from "./Lazy"
+export {CommonLazy} from "./CommonLazy"
+export type {Lazy}  from "./Lazy"
 
 /**
  * Create a new {@link Lazy} already initialized with the specified {@link value}
