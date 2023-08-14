@@ -5,6 +5,7 @@
 * [Usage](#usage)
   * [Lazy value](#lazy-value)
   * [Non-lazy value](#non-lazy-value)
+  * [Common lazy](#common-lazy)
 * [Contribution](#contribution)
 
 This project is a simple implementation of the [Kotlin Lazy](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-lazy/).
@@ -57,6 +58,37 @@ firstValue.isInitialized // true
 firstValue.value         // 2
 firstValue.isInitialized // true
 ```
+
+### Common lazy
+
+When utilizing the lazy methods,
+it always creates a new instance.
+
+But, there could be some cases where an already known value is there.
+
+Here is the full list of the common `Lazy` instances:
+
+| Value                                              | With string | With character |
+|----------------------------------------------------|-------------|:---------------|
+| `null`                                             | yes         |                |
+| `undefined`                                        | yes         |                |
+| `true` / `false`                                   | yes         |                |
+| `-1` / `0` / `1` / `2`                             | yes         | yes            |
+| `NaN` / `Infinity` / `-Infinity`                   | yes         |                |
+| `ln(2)` / `ln(10)`                                 |             |                |
+| `log₂(E)` / `log₁₀(E)`                             |             |                |
+| `E`, `PI`                                          |             |                |
+| ` ` / `\t` / `\n`                                  |             | yes            |
+| epoch / now / tomorrow / yesterday                 |             |                |
+| invalid Date                                       | yes         |                |
+| empty String → `''`                                |             |                |
+| empty object → `Readonly<{}>`                      |             |                |
+| empty Array → `readonly []`                        |             |                |
+| empty Set → `ReadonlySet<never>`                   |             |                |
+| empty WeakSet → `Readonly<WeakSet<never>>`         |             |                |
+| empty Map → `ReadonlyMap<unknown, never>`          |             |                |
+| empty WeakMap → `Readonly<WeakMap<object, never>>` |             |                |
+
 
 ## Contribution
 You can contribute to great simple packages.
