@@ -22,7 +22,8 @@ But other languages will be eventually added
 
 ## Version history
 
-| JS/TS | Date            | Quick note                                  |
-|-------|-----------------|---------------------------------------------|
-| 1.0.1 | July 1st, 2023  | A small update of the dependencies          |
-| 1.0.0 | June 28th, 2023 | The first implementation used in Javascript |
+| JS/TS | Date              | Quick note                                                                                |
+|-------|-------------------|-------------------------------------------------------------------------------------------|
+| 1.1.0 | August 14th, 2023 | New [CommonLazy](https://github.com/joooKiwi/lazy/blob/main/javascript/src/CommonLazy.ts) |
+| 1.0.1 | July 1st, 2023    | A small update of the dependencies                                                        |
+| 1.0.0 | June 28th, 2023   | The first implementation used in Javascript                                               |
