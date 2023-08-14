@@ -10,7 +10,8 @@ import type {Lazy} from "./Lazy"
 import {InitializedLazy}    from "./InitializedLazy"
 import {LazyImplementation} from "./LazyImplementation"
 
-export type {Lazy} from "./Lazy"
+export {CommonLazy} from "./CommonLazy"
+export type {Lazy}  from "./Lazy"
 
 /**
  * Create a new {@link Lazy} already initialized with the specified {@link value}
