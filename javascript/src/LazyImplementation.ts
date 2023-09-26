@@ -44,7 +44,9 @@ export class LazyImplementation<const out T, >
     public toString(): string {
         if (this.isInitialized) {
             const value = this.#value as T
-            return value == null ? `${value}` : value.toString()
+            if (value == null)
+                return `${value}`
+            return value.toString()
         }
         return "Lazy value not initialized yet."
     }

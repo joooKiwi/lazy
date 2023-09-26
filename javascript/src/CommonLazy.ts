@@ -30,13 +30,13 @@ export namespace CommonLazy {
     //#region -------------------- Lazy number --------------------
 
     /** A simple {@link Lazy} for <b>-1</b> */
-    export const MINUS_1 = lazyOf(-1,)
+    export const MINUS_1_NUMBER = lazyOf(-1,)
     /** A simple {@link Lazy} for <b>0</b> */
-    export const ZERO = lazyOf(0,)
+    export const ZERO_NUMBER = lazyOf(0,)
     /** A simple {@link Lazy} for <b>1</b> */
-    export const ONE = lazyOf(1,)
+    export const ONE_NUMBER = lazyOf(1,)
     /** A simple {@link Lazy} for <b>2</b> */
-    export const TWO = lazyOf(2,)
+    export const TWO_NUMBER = lazyOf(2,)
 
     /** A simple {@link Lazy} for {@link Number.NaN NaN} */
     export const NAN = lazyOf(Number.NaN,)
@@ -59,6 +59,18 @@ export namespace CommonLazy {
     export const PI = lazyOf(Math.PI,)
 
     //#endregion -------------------- Lazy number --------------------
+    //#region -------------------- Lazy bigint --------------------
+
+    /** A simple {@link Lazy} for <b>-1</b> */
+    export const MINUS_1_BIG_INT = lazyOf(-1n,)
+    /** A simple {@link Lazy} for <b>0</b> */
+    export const ZERO_BIG_INT = lazyOf(0n,)
+    /** A simple {@link Lazy} for <b>1</b> */
+    export const ONE_BIGINT = lazyOf(1n,)
+    /** A simple {@link Lazy} for <b>2</b> */
+    export const TWO_BIGINT = lazyOf(2n,)
+
+    //#endregion -------------------- Lazy bigint --------------------
     //#region -------------------- Lazy character --------------------
 
     /** A simple {@link Lazy} for the space {@link String Character} */
@@ -165,7 +177,7 @@ export namespace CommonLazy {
     /** A simple {@link Lazy} for an empty {@link Object} */
     export const EMPTY_OBJECT = lazy(() => Object.freeze({},),)
     /** A simple {@link Lazy} for an empty {@link Array} */
-    export const EMPTY_ARRAY = lazy(() => Object.freeze([],),)
+    export const EMPTY_ARRAY = lazy(() => Object.freeze([],) as readonly [],)
     /** A simple {@link Lazy} for an empty {@link Set} */
     export const EMPTY_SET = lazy(() => Object.freeze(new Set<never>(),) as ReadonlySet<never>,)
     /** A simple {@link Lazy} for an empty {@link WeakSet} */
