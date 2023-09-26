@@ -31,7 +31,9 @@ export class InitializedLazy<const out T, >
 
     public toString(): string {
         const value = this.value
-        return value == null ? `${value}` : value.toString()
+        if (value == null)
+            return `${value}`
+        return value.toString()
     }
 
 }
