@@ -165,7 +165,7 @@ export namespace CommonLazy {
     /** A simple {@link Lazy} for an empty {@link Object} */
     export const EMPTY_OBJECT = lazy(() => Object.freeze({},),)
     /** A simple {@link Lazy} for an empty {@link Array} */
-    export const EMPTY_ARRAY = lazy(() => Object.freeze([],),)
+    export const EMPTY_ARRAY = lazy(() => Object.freeze([],) as readonly [],)
     /** A simple {@link Lazy} for an empty {@link Set} */
     export const EMPTY_SET = lazy(() => Object.freeze(new Set<never>(),) as ReadonlySet<never>,)
     /** A simple {@link Lazy} for an empty {@link WeakSet} */
