@@ -22,10 +22,10 @@ But other languages will be eventually added
 
 ## Version history
 
-| JS/TS | Date                 | Quick note                                                                                |
-|-------|----------------------|-------------------------------------------------------------------------------------------|
-| 1.2.0 | September 28th, 2023 | Addition of lazy "bigint" numbers<br/>Fix on the empty array to be `readonly []`          |
-| 1.1.1 | August 14th, 2023    | Relocation of the `lazy` & `lazyOf` methods in their own standalone file                  |
-| 1.1.0 | August 14th, 2023    | New [CommonLazy](https://github.com/joooKiwi/lazy/blob/main/javascript/src/CommonLazy.ts) |
-| 1.0.1 | July 1st, 2023       | A small update of the dependencies                                                        |
-| 1.0.0 | June 28th, 2023      | The first implementation used in Javascript                                               |
+| JS/TS                                                            | Date                 | Quick note                                                                                |
+|------------------------------------------------------------------|----------------------|-------------------------------------------------------------------------------------------|
+| [1.2.0](https://github.com/joooKiwi/lazy/releases/tag/v1.2.0-js) | September 28th, 2023 | Addition of lazy "bigint" numbers<br/>Fix on the empty array to be `readonly []`          |
+| [1.1.1](https://github.com/joooKiwi/lazy/releases/tag/v1.1.1-js) | August 14th, 2023    | Relocation of the `lazy` & `lazyOf` methods in their own standalone file                  |
+| [1.1.0](https://github.com/joooKiwi/lazy/releases/tag/v1.1.0-js) | August 14th, 2023    | New [CommonLazy](https://github.com/joooKiwi/lazy/blob/main/javascript/src/CommonLazy.ts) |
+| 1.0.1                                                            | July 1st, 2023       | A small update of the dependencies                                                        |
+| 1.0.0                                                            | June 28th, 2023      | The first implementation used in Javascript                                               |
