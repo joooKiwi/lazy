@@ -24,7 +24,7 @@ But other languages will be eventually added
 
 | JS/TS | Date                 | Quick note                                                                                |
 |-------|----------------------|-------------------------------------------------------------------------------------------|
-| 1.2.0 | September 26th, 2023 | Addition of lazy "bigint» numbers<br/>Fix on the empty array to be `readonly []`          |
+| 1.2.0 | September 28th, 2023 | Addition of lazy "bigint" numbers<br/>Fix on the empty array to be `readonly []`          |
 | 1.1.1 | August 14th, 2023    | Relocation of the `lazy` & `lazyOf` methods in their own standalone file                  |
 | 1.1.0 | August 14th, 2023    | New [CommonLazy](https://github.com/joooKiwi/lazy/blob/main/javascript/src/CommonLazy.ts) |
 | 1.0.1 | July 1st, 2023       | A small update of the dependencies                                                        |
