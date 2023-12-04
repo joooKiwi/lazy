@@ -29,6 +29,7 @@ Here is a list of the related projects made by me
 
 | JS/TS                                                            | Date                 | Quick note                                                                                |
 |------------------------------------------------------------------|----------------------|-------------------------------------------------------------------------------------------|
+| 1.2.1                                                            | December 4th, 2023   | A small update of the dependencies                                                        |
 | [1.2.0](https://github.com/joooKiwi/lazy/releases/tag/v1.2.0-js) | September 28th, 2023 | Addition of lazy "bigint" numbers<br/>Fix on the empty array to be `readonly []`          |
 | [1.1.1](https://github.com/joooKiwi/lazy/releases/tag/v1.1.1-js) | August 14th, 2023    | Relocation of the `lazy` & `lazyOf` methods in their own standalone file                  |
 | [1.1.0](https://github.com/joooKiwi/lazy/releases/tag/v1.1.0-js) | August 14th, 2023    | New [CommonLazy](https://github.com/joooKiwi/lazy/blob/main/javascript/src/CommonLazy.ts) |
