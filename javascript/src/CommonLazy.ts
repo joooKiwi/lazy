@@ -61,10 +61,10 @@ export namespace CommonLazy {
     //#endregion -------------------- Lazy number --------------------
     //#region -------------------- Lazy bigint --------------------
 
-    export const MINUS_1_BIG_INT = lazyOf(-1n,)
-    export const ZERO_BIG_INT = lazyOf(0n,)
     /** A {@link Lazy} for <b>-1</b> */
+    export const MINUS_1_BIGINT = lazyOf(-1n,)
     /** A {@link Lazy} for <b>0</b> */
+    export const ZERO_BIGINT = lazyOf(0n,)
     /** A {@link Lazy} for <b>1</b> */
     export const ONE_BIGINT = lazyOf(1n,)
     /** A {@link Lazy} for <b>2</b> */
