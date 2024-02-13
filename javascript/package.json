@@ -12,8 +12,9 @@
     "build-umd":   "tsc --project tsconfig.umd.json",
     "build-types": "tsc --project tsconfig.types.json",
 
-    "test": "jest",
-    "test-initiazed": "jest --testNamePattern=InitializedLazyTest",
+    "test":                "jest",
+    "test-with-coverage":  "jest --coverage",
+    "test-initiazed":      "jest --testNamePattern=InitializedLazyTest",
     "test-implementation": "jest --testNamePattern=LazyImplementationTest",
 
     "test-pack":    "npm pack --dry-run",
