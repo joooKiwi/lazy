@@ -36,7 +36,7 @@ Here is a simple implementation of the lazy via 2 functions
 
 ### Lazy value
 
-Utilising the lazy value will always return a `Lazy` object holding a value.
+Using the lazy value will always return a `Lazy` object holding a value.
 
 ```javascript
 import {lazy} from "@joookiwi/lazy"
@@ -51,7 +51,7 @@ firstValue.isInitialized // true
 If the value is already known, then just use `lazyOf()` in order to have a `Lazy` with an already loaded value.
 
 ```javascript
-import {lazy} from "@joookiwi/lazy"
+import {lazyOf} from "@joookiwi/lazy"
 
 const firstValue = lazyOf(2)
 firstValue.isInitialized // true
@@ -61,33 +61,33 @@ firstValue.isInitialized // true
 
 ### Common lazy
 
-When utilizing the lazy methods,
+When using the lazy methods,
 it always creates a new instance.
 
 But, there could be some cases where an already known value is there.
 
 Here is the full list of the common `Lazy` instances:
 
-| Value                                              | With string | With character |
-|----------------------------------------------------|-------------|:---------------|
-| `null`                                             | yes         |                |
-| `undefined`                                        | yes         |                |
-| `true` / `false`                                   | yes         |                |
-| `-1` / `0` / `1` / `2`                             | yes         | yes            |
-| `NaN` / `Infinity` / `-Infinity`                   | yes         |                |
-| `ln(2)` / `ln(10)`                                 |             |                |
-| `log₂(E)` / `log₁₀(E)`                             |             |                |
-| `E`, `PI`                                          |             |                |
-| ` ` / `\t` / `\n`                                  |             | yes            |
-| epoch / now / tomorrow / yesterday                 |             |                |
-| invalid Date                                       | yes         |                |
-| empty String → `''`                                |             |                |
-| empty object → `Readonly<{}>`                      |             |                |
-| empty Array → `readonly []`                        |             |                |
-| empty Set → `ReadonlySet<never>`                   |             |                |
-| empty WeakSet → `Readonly<WeakSet<never>>`         |             |                |
-| empty Map → `ReadonlyMap<unknown, never>`          |             |                |
-| empty WeakMap → `Readonly<WeakMap<object, never>>` |             |                |
+| Value                                              | With string | With character | With BigInt |
+|----------------------------------------------------|:------------|:---------------|:------------|
+| `null`                                             | yes         |                |             |
+| `undefined`                                        | yes         |                |             |
+| `true` / `false`                                   | yes         |                |             |
+| `-1` / `0` / `1` / `2`                             | yes         | yes            | yes         |
+| `NaN` / `Infinity` / `-Infinity`                   | yes         |                |             |
+| `ln(2)` / `ln(10)`                                 |             |                |             |
+| `log₂(E)` / `log₁₀(E)`                             |             |                |             |
+| `E`, `PI`                                          |             |                |             |
+| ` ` / `\t` / `\n`                                  |             | yes            |             |
+| epoch / now / tomorrow / yesterday                 |             |                |             |
+| invalid Date                                       | yes         |                |             |
+| empty String → `''`                                |             |                |             |
+| empty object → `Readonly<{}>`                      |             |                |             |
+| empty Array → `readonly []`                        |             |                |             |
+| empty Set → `ReadonlySet<never>`                   |             |                |             |
+| empty WeakSet → `Readonly<WeakSet<never>>`         |             |                |             |
+| empty Map → `ReadonlyMap<unknown, never>`          |             |                |             |
+| empty WeakMap → `Readonly<WeakMap<object, never>>` |             |                |             |
 
 
 ## Contribution
