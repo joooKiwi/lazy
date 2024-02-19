@@ -25,6 +25,12 @@ Here is a list of the related projects made by me
  - collection ([GitHub](https://github.com/joooKiwi/collection) | [NPM](https://www.npmjs.com/package/@joookiwi/collection))
  - enumeration ([GitHub](https://github.com/joooKiwi/enumeration) | [NPM](https://www.npmjs.com/package/@joookiwi/enumerable))
 
+## Contribution
+
+You can contribute to my projects in 2 different ways
+- [GitHub sponsor](https://github.com/sponsors/joooKiwi) or
+- [!["Buy me a Coffee"](https://img.buymeacoffee.com/button-api/?&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/joookiwi)
+
 ## Version history
 
 | JS/TS                                                            | Date                 | Quick note                                                                                |
