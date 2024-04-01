@@ -22,8 +22,8 @@ export class LazyImplementation<const out T, >
     public constructor(initializer: () => T,) {
         if (!(initializer instanceof Function)) {
             if (initializer == null)
-                throw new TypeError(`The initializer received in the "${LazyImplementation.constructor.name}" cannot be null.`,)
-            throw new TypeError(`The initializer received in the "${LazyImplementation.constructor.name}" should be a function type (type = ${typeof initializer} & constructor = ${(initializer as NonNullable<unknown>).constructor.name}).`,)
+                throw new TypeError(`The initializer received in the "LazyImplementation" cannot be null.`,)
+            throw new TypeError(`The initializer received in the "LazyImplementation" should be a function type (type = ${typeof initializer} & constructor = ${(initializer as NonNullable<unknown>).constructor.name}).`,)
         }
         this.#initializer = initializer
         this.#isInitialized = false
