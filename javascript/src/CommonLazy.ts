@@ -5,6 +5,8 @@
  All the right is reserved to the author of this project.
  ******************************************************************************/
 
+import type {EmptyArray, EmptyMap, EmptyObject, EmptySet, EmptyWeakMap, EmptyWeakSet} from "@joookiwi/type"
+
 import {lazy}   from "./method/lazy"
 import {lazyOf} from "./method/lazyOf"
 
@@ -175,17 +177,17 @@ export namespace CommonLazy {
     /** A {@link Lazy} for an empty {@link String} */
     export const EMPTY_STRING = lazyOf('',)
     /** A {@link Lazy} for an empty {@link Object} */
-    export const EMPTY_OBJECT = lazy(() => Object.freeze({},),)
+    export const EMPTY_OBJECT = lazy(() => Object.freeze({},) as EmptyObject,)
     /** A {@link Lazy} for an empty {@link Array} */
-    export const EMPTY_ARRAY = lazy(() => Object.freeze([],) as readonly [],)
+    export const EMPTY_ARRAY = lazy(() => Object.freeze([],) as EmptyArray,)
     /** A {@link Lazy} for an empty {@link Set} */
-    export const EMPTY_SET = lazy(() => Object.freeze(new Set<never>(),) as ReadonlySet<never>,)
+    export const EMPTY_SET = lazy(() => Object.freeze(new Set<never>(),) as EmptySet,)
     /** A {@link Lazy} for an empty {@link WeakSet} */
-    export const EMPTY_WEAK_SET = lazy(() => Object.freeze(new WeakSet<never>(),),)
+    export const EMPTY_WEAK_SET = lazy(() => Object.freeze(new WeakSet(),) as EmptyWeakSet,)
     /** A {@link Lazy} for an empty {@link Map} */
-    export const EMPTY_MAP = lazy(() => Object.freeze(new Map<unknown, never>(),) as ReadonlyMap<unknown, never>,)
+    export const EMPTY_MAP = lazy(() => Object.freeze(new Map<any, never>(),) as EmptyMap,)
     /** A {@link Lazy} for an empty {@link WeakMap} */
-    export const EMPTY_WEAK_MAP = lazy(() => Object.freeze(new WeakMap<object, never>(),),)
+    export const EMPTY_WEAK_MAP = lazy(() => Object.freeze(new WeakMap(),) as EmptyWeakMap,)
 
     //#endregion -------------------- Lazy empty objects --------------------
 
