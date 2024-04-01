@@ -63,8 +63,10 @@
   ],
   "author": "JóôòKiwi",
   "license": "MIT",
+  "dependencies": {
+    "@joookiwi/type": "^1.0.0"
+  },
   "devDependencies": {
-    "@joookiwi/type": "^1.0.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.19",
     "del-cli": "^5.1.0",
