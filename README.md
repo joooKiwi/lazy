@@ -22,6 +22,7 @@ But other languages will be eventually added
 ## Related projects
 
 Here is a list of the related projects made by me
+ - type ([GitHub](https://github.com/joooKiwi/type) | [NPM](https://www.npmjs.com/package/@joookiwi/type))
  - collection ([GitHub](https://github.com/joooKiwi/collection) | [NPM](https://www.npmjs.com/package/@joookiwi/collection))
  - enumeration ([GitHub](https://github.com/joooKiwi/enumeration) | [NPM](https://www.npmjs.com/package/@joookiwi/enumerable))
 
@@ -35,6 +36,7 @@ You can contribute to my projects in 2 different ways
 
 | JS/TS                                                            | Date                 | Quick note                                                                                |
 |------------------------------------------------------------------|----------------------|-------------------------------------------------------------------------------------------|
+| 1.4.0                                                            | March 31st, 2024     | Addition of [type](https://github.com/joooKiwi/type) to the dependency                    |
 | [1.3.0](https://github.com/joooKiwi/lazy/releases/tag/v1.3.0-js) | February 19th, 2024  | Standardization of the ~~BIG_INT~~ / BIGINT to only be BIGINT                             |
 | 1.2.1                                                            | December 4th, 2023   | A small update of the dependencies                                                        |
 | [1.2.0](https://github.com/joooKiwi/lazy/releases/tag/v1.2.0-js) | September 28th, 2023 | Addition of lazy "bigint" numbers<br/>Fix on the empty array to be `readonly []`          |
