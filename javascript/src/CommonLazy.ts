@@ -67,6 +67,8 @@ export namespace CommonLazy {
      * @see https://www.piday.org/million/
      */
     export const PI = lazyOf(Math.PI,)
+    /** A {@link Lazy} for <i>tau</i> (τ) (<code>{@link PI} * 2</code> ≈ 6.283 185 307 179 586) */
+    export const TAU = lazyOf(2 * Math.PI,)
 
     //#endregion -------------------- Lazy number --------------------
     //#region -------------------- Lazy bigint --------------------
