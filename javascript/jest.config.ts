@@ -14,7 +14,7 @@ import type {Config} from "jest"
 export default {
     clearMocks:               true,
     collectCoverage:          true,
-    collectCoverageFrom:      ["./src/**/*.ts", "!**/index.ts",],
+    collectCoverageFrom:      ["./src/**/*.ts", "!**/index.ts", "!./src/Lazy.ts",],
     coverageDirectory:        "./coverage",
     coverageProvider:         "v8",
     coverageReporters:        ["lcov" , ["text", {skipFull: true,},],],

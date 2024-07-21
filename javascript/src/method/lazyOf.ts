@@ -13,6 +13,9 @@ import {InitializedLazy} from "../InitializedLazy"
  * Create a new {@link Lazy} already initialized with the specified {@link value}
  *
  * @param value The value directly
+ * @see booleanLazyOf
+ * @see numberLazyOf
+ * @see bigIntLazyOf
  */
 export function lazyOf<const T, >(value: T,): Lazy<T> {
     return new InitializedLazy(value,)
