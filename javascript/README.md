@@ -5,6 +5,7 @@
 * [Usage](#usage)
   * [Lazy value](#lazy-value)
   * [Non-lazy value](#non-lazy-value)
+  * [Specialized non-lazy value](#specialized-non-lazy-value)
   * [Common lazy](#common-lazy)
 * [Contribution](#contribution)
 
@@ -58,6 +59,13 @@ firstValue.isInitialized // true
 firstValue.value         // 2
 firstValue.isInitialized // true
 ```
+
+### Specialized non-lazy value
+
+There are some specialized `lazyOf()`-like `Lazy` to reuse the `CommonLazy` values depending on what it has received:
+ - `booleanLazyOf` for the `boolean`
+ - `numberLazyOf` for the `number`
+ - `bigintLazyOf` for the `bigint`
 
 ### Common lazy
 
