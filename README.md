@@ -1,9 +1,14 @@
 # Lazy
 
-This project has the purpose to have a similar implementation depending on the language used.
-It can be from `Javascript`, `Java`, `Kotlin`, `PHP` and even `C#`.
+This project has the purpose to expand on the lazy pattern on giving ways
+to have a "lazy-like" holder
+or "true-lazy" holder in the same structure.
 
-_(Maybe other languages will be added, we will see)_
+It has its origin in `Kotlin` & `C#`,
+but expand on their use to include the nullable type as a valid type.
+
+It will try to include its behaviour across different languages
+(`Javascript`, `Java`, `Kotlin`, `PHP`, `C#` and possibly more)
 
 ## Publication location
 
@@ -11,13 +16,13 @@ This project only has the Javascript (with Typescript) uploaded.
 
 But other languages will be eventually added
 
-| Language                  |                                                                                            Published                                                                                            |
-|:--------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Javascript<br/>Typescript | [Published to npm](https://www.npmjs.com/package/@joookiwi/lazy)<br/>[![downloads](https://img.shields.io/npm/dt/@joookiwi/lazy.svg)](https://npm-stat.com/charts.html?package=@joookiwi/lazy)  |
-| Java                      |                                                                                              Maven                                                                                              |
-| Kotlin                    |                                            [Integrated in the language](https://kotlinlang.org/docs/delegated-properties.html#observable-properties)                                            |
-| PHP                       |                                                                                            Composer                                                                                             |
-| C#                        |                                                                                              Nuget                                                                                              |
+| Language                  |                                                                                           Published                                                                                            |
+|:--------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Javascript<br/>Typescript | [Published to npm](https://www.npmjs.com/package/@joookiwi/lazy)<br/>[![downloads](https://img.shields.io/npm/dt/@joookiwi/lazy.svg)](https://npm-stat.com/charts.html?package=@joookiwi/lazy) |
+| Java                      |                                                                                             Maven                                                                                              |
+| Kotlin                    |                      [Integrated in the language](https://kotlinlang.org/docs/delegated-properties.html#observable-properties)<br/>_(but common values are to be added)_                       |
+| PHP                       |                                                                                            Composer                                                                                            |
+| C#                        |                                                                                             Nuget                                                                                              |
 
 ## Related projects
 
