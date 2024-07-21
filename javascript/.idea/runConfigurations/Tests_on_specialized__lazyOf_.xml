@@ -1,13 +1,13 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Every tests (LazyImplementation)" type="JavaScriptTestRunnerJest">
+  <configuration default="false" name="Tests on specialized &quot;lazyOf&quot;" type="JavaScriptTestRunnerJest">
     <node-interpreter value="project" />
     <jest-package value="$PROJECT_DIR$/node_modules/jest" />
     <working-dir value="$PROJECT_DIR$" />
     <envs />
     <scope-kind value="SUITE" />
-    <test-file value="$PROJECT_DIR$/test/LazyImplementation.test.ts" />
+    <test-file value="$PROJECT_DIR$/test/specializedLazyOf.test.ts" />
     <test-names>
-      <test-name value="LazyImplementationTest" />
+      <test-name value="Specialized lazyOf tests" />
     </test-names>
     <method v="2" />
   </configuration>
