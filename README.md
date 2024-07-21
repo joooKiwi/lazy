@@ -41,7 +41,7 @@ You can contribute to my projects in 2 different ways
 
 | JS/TS                                                            | Date                 | Quick note                                                                                |
 |------------------------------------------------------------------|----------------------|-------------------------------------------------------------------------------------------|
-| [1.5.0](https://github.com/joooKiwi/lazy/releases/tag/v1.5.0-js) | July 21st, 2024      | Addition of `lazyOf` for the predefined `boolean`, `bigint` & `number`                    |
+| [1.5.0](https://github.com/joooKiwi/lazy/releases/tag/v1.5.0-js) | July 21st, 2024      | Addition of predefined `lazyOf` for the `boolean`, `bigint` & `number`                    |
 | 1.4.0                                                            | March 31st, 2024     | Addition of [type](https://github.com/joooKiwi/type) to the dependency                    |
 | [1.3.0](https://github.com/joooKiwi/lazy/releases/tag/v1.3.0-js) | February 19th, 2024  | Standardization of the ~~BIG_INT~~ / BIGINT to only be BIGINT                             |
 | 1.2.1                                                            | December 4th, 2023   | A small update of the dependencies                                                        |
