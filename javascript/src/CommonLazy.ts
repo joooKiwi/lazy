@@ -47,17 +47,25 @@ export namespace CommonLazy {
     /** A {@link Lazy} for {@link Number.NEGATIVE_INFINITY -∞} */
     export const NEGATIVE_INFINITY = lazyOf(Number.NEGATIVE_INFINITY,)
 
-    /** A {@link Lazy} for {@link Math.LN2 ln(2)} */
+    /** A {@link Lazy} for {@link Math.LN2 ln(2)} (≈ 0.693 147 180 559 945 3) */
     export const LN_OF_2 = lazyOf(Math.LN2,)
-    /** A {@link Lazy} for {@link Math.LN10 ln(10)} */
+    /** A {@link Lazy} for {@link Math.LN10 ln(10)} (≈ 2.302 585 092 994 046) */
     export const LN_OF_10 = lazyOf(Math.LN10,)
-    /** A {@link Lazy} for {@link Math.LOG2E log₂(E)} */
+    /** A {@link Lazy} for {@link Math.LOG2E log₂(E)} (≈ 1.442 695 040 888 963 4) */
     export const LOG_2_OF_E = lazyOf(Math.LOG2E,)
-    /** A {@link Lazy} for {@link Math.LOG10E log₁₀(E)} */
+    /** A {@link Lazy} for {@link Math.LOG10E log₁₀(E)} (≈ 0.434 294 481 903 251 8) */
     export const LOG_10_OF_E = lazyOf(Math.LOG10E,)
-    /** A {@link Lazy} for {@link Math.E E} */
+    /**A {@link Lazy} for {@link Math.SQRT2 √2} (≈ 1.414 213 562 373 095 1) */
+    export const SQUARE_ROOT_OF_2 = lazyOf(Math.SQRT2,)
+    /**A {@link Lazy} for {@link Math.SQRT2 √½} (≈ 0.707 106 781 186 547 6) */
+    export const SQUARE_ROOT_OF_1_OUT_OF_2 = lazyOf(Math.SQRT1_2,)
+    /** A {@link Lazy} for {@link Math.E E} (≈ 2.718 281 828 459 045) */
     export const E = lazyOf(Math.E,)
-    /** A {@link Lazy} for {@link Math.PI Pi🥧} */
+    /**
+     * A {@link Lazy} for {@link Math.PI Pi🥧(π)} (≈ 3.141 592 653 589 793)
+     *
+     * @see https://www.piday.org/million/
+     */
     export const PI = lazyOf(Math.PI,)
 
     //#endregion -------------------- Lazy number --------------------
