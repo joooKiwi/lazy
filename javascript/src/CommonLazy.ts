@@ -153,15 +153,27 @@ export namespace CommonLazy {
      */
     export const EPOCH_DATE = lazy(() => Object.freeze(new Date(0,),),)
 
-    /** A {@link Lazy} for today as a {@link Date} */
+    /**
+     * A {@link Lazy} for today as a {@link Date}
+     *
+     * @deprecated The use of the current date will always be invalid after the retrieval. Use "new Date()" directly.
+     */
     export const NOW_DATE = lazyOf(Object.freeze(new Date(),),)
-    /** A {@link Lazy} for tomorrow as a {@link Date} */
+    /**
+     * A {@link Lazy} for tomorrow as a {@link Date}
+     *
+     * @deprecated The use of the current date will always be invalid after the retrieval
+     */
     export const TOMORROW_DATE = lazy(() => {
         const date = new Date(CommonLazy.NOW_DATE.value.getUTCDate(),)
         date.setUTCDate(date.getUTCDate() + 1,)
         return Object.freeze(date,)
     },)
-    /** A {@link Lazy} for tomorrow as a {@link Date} */
+    /**
+     * A {@link Lazy} for tomorrow as a {@link Date}
+     *
+     * @deprecated The use of the current date will always be invalid after the retrieval
+     */
     export const YESTERDAY_DATE = lazy(() => {
         const date = new Date(CommonLazy.NOW_DATE.value.getUTCDate(),)
         date.setUTCDate(date.getUTCDate() - 1,)
