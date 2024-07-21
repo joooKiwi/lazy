@@ -76,26 +76,26 @@ But, there could be some cases where an already known value is there.
 
 Here is the full list of the common `Lazy` instances:
 
-| Value                                              | With string | With character | With BigInt |
-|----------------------------------------------------|:------------|:---------------|:------------|
-| `null`                                             | yes         |                |             |
-| `undefined`                                        | yes         |                |             |
-| `true` / `false`                                   | yes         |                |             |
-| `-1` / `0` / `1` / `2`                             | yes         | yes            | yes         |
-| `NaN` / `Infinity` / `-Infinity`                   | yes         |                |             |
-| `ln(2)` / `ln(10)`                                 |             |                |             |
-| `log₂(E)` / `log₁₀(E)`                             |             |                |             |
-| `E`, `PI`                                          |             |                |             |
-| ` ` / `\t` / `\n`                                  |             | yes            |             |
-| epoch / now / tomorrow / yesterday                 |             |                |             |
-| invalid Date                                       | yes         |                |             |
-| empty String → `''`                                |             |                |             |
-| empty object → `Readonly<{}>`                      |             |                |             |
-| empty Array → `readonly []`                        |             |                |             |
-| empty Set → `ReadonlySet<never>`                   |             |                |             |
-| empty WeakSet → `Readonly<WeakSet<never>>`         |             |                |             |
-| empty Map → `ReadonlyMap<unknown, never>`          |             |                |             |
-| empty WeakMap → `Readonly<WeakMap<object, never>>` |             |                |             |
+| Value                                               | With string | With character | With BigInt |
+|-----------------------------------------------------|:------------|:---------------|:------------|
+| `null`                                              | yes         |                |             |
+| `undefined`                                         | yes         |                |             |
+| `true` / `false`                                    | yes         |                |             |
+| `-1` / `0` / `1` / `2`                              | yes         | yes            | yes         |
+| `NaN` / `∞` (infinity) / `-∞` _(-infinity)_         | yes         |                |             |
+| `ln(2)` / `ln(10)`                                  |             |                |             |
+| `log₂(E)` / `log₁₀(E)`                              |             |                |             |
+| `E`, `π` _(pi)_, `τ` _(tau)_                        |             |                |             |
+| ` ` / `\t` / `\n`                                   |             | yes            |             |
+| epoch / ~~now~~ / ~~tomorrow~~ / ~~yesterday~~      |             |                |             |
+| invalid Date                                        | yes         |                |             |
+| empty String → `''`                                 |             |                |             |
+| empty object → `Readonly<{}>`                       |             |                |             |
+| empty Array → `readonly []`                         |             |                |             |
+| empty Set → `ReadonlySet<never>`                    |             |                |             |
+| empty WeakSet → `Readonly<WeakSet<WeakKey>>`        |             |                |             |
+| empty Map → `ReadonlyMap<unknown, never>`           |             |                |             |
+| empty WeakMap → `Readonly<WeakMap<WeakKey, never>>` |             |                |             |
 
 
 ## Contribution
