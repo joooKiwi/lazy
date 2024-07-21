@@ -11,6 +11,12 @@ import {lazy}   from "./method/lazy"
 import {lazyOf} from "./method/lazyOf"
 
 /** The common {@link Lazy} that could be used */
+export class CommonLazy {
+    constructor() {
+        throw new EvalError("The utility object CommonLazy cannot be created.",)
+    }
+}
+
 export namespace CommonLazy {
 
     //#region -------------------- Lazy null --------------------
@@ -213,4 +219,12 @@ export namespace CommonLazy {
 
     //#endregion -------------------- Lazy empty objects --------------------
 
+}
+
+export interface CommonLazy {
+    /**
+     * @param args Any possible arguments sent
+     * @throws EvalError The utility object cannot be constructed
+     */
+    new(...args: readonly unknown[]): never
 }
