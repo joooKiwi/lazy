@@ -170,7 +170,7 @@ export namespace CommonLazy {
     export const EPOCH_DATE = lazy(() => Object.freeze(new Date(0,),),)
 
     /** A {@link Lazy} for an invalid {@link Date} */
-    export const INVALID_DATE = lazy(() => Object.freeze(new Date(CommonLazy.INVALID_DATE_STRING.value,),),)
+    export const INVALID_DATE = lazy(() => Object.freeze(new Date("",),),)
 
     //#endregion -------------------- Lazy date --------------------
     //#region -------------------- Lazy empty objects --------------------
