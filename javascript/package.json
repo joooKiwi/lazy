@@ -64,7 +64,7 @@
   "author": "JóôòKiwi",
   "license": "MIT",
   "dependencies": {
-    "@joookiwi/type": "^1.0.0"
+    "@joookiwi/type": "^1.1.0"
   },
   "devDependencies": {
     "@types/jest":            "^29.5.14",
