@@ -9,10 +9,8 @@
   * [Common lazy](#common-lazy)
 * [Contribution](#contribution)
 
-This project is a simple implementation of the [Kotlin Lazy](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-lazy/).
-And if in any shape or form, there is a NPM usage from the Kotlin team itself, this will become deprecated.
-
-With that clarified, here is how it can be used.
+This project is an implementation based on the [Kotlin Lazy](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-lazy/).
+All of this with additional features to help the reusing of some values.
 
 ## Installation
 ```
@@ -30,8 +28,8 @@ npm i -D @joookiwi/lazy
 The usage is similar to the kotlin usage like `val value by lazy { someValue }` in kotlin
 as well as the non-lazy implementation like `val value = lazyOf(someValue)`.
 
-But since there is no apparent dependency toward this specifically.
-Here is a simple implementation of the lazy via 2 functions
+But since there is no significant dependency toward this specifically.
+Here is an implementation of the lazy via 2 functions
  - `lazy` to load the value later
  - `lazyOf` to have a `Lazy` but with an already loaded value
 
@@ -47,6 +45,7 @@ firstValue.isInitialized // false
 firstValue.value         // 2
 firstValue.isInitialized // true
 ```
+
 ### Non-lazy value
 
 If the value is already known, then just use `lazyOf()` in order to have a `Lazy` with an already loaded value.
@@ -66,6 +65,7 @@ There are some specialized `lazyOf()`-like `Lazy` to reuse the `CommonLazy` valu
  - `booleanLazyOf` for the `boolean`
  - `numberLazyOf` for the `number`
  - `bigintLazyOf` for the `bigint`
+ - `dateLazyOf` for the `Date`
 
 ### Common lazy
 
@@ -87,8 +87,8 @@ Here is the full list of the common `Lazy` instances:
 | `log₂(E)` / `log₁₀(E)`                              |             |                |             |
 | `E`, `π` _(pi)_, `τ` _(tau)_                        |             |                |             |
 | ` ` / `\t` / `\n`                                   |             | yes            |             |
-| epoch / ~~now~~ / ~~tomorrow~~ / ~~yesterday~~      |             |                |             |
-| invalid Date                                        | yes         |                |             |
+| epoch date                                          |             |                |             |
+| invalid date                                        | yes         |                |             |
 | empty String → `''`                                 |             |                |             |
 | empty object → `Readonly<{}>`                       |             |                |             |
 | empty Array → `readonly []`                         |             |                |             |
@@ -96,7 +96,6 @@ Here is the full list of the common `Lazy` instances:
 | empty WeakSet → `Readonly<WeakSet<WeakKey>>`        |             |                |             |
 | empty Map → `ReadonlyMap<unknown, never>`           |             |                |             |
 | empty WeakMap → `Readonly<WeakMap<WeakKey, never>>` |             |                |             |
-
 
 ## Contribution
 You can contribute to great simple packages.

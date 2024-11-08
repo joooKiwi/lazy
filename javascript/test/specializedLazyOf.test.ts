@@ -8,6 +8,7 @@
 import {CommonLazy}    from "../src/CommonLazy"
 import {bigIntLazyOf}  from "../src/method/bigIntLazyOf"
 import {booleanLazyOf} from "../src/method/booleanLazyOf"
+import {dateLazyOf}    from "../src/method/dateLazyOf"
 import {numberLazyOf}  from "../src/method/numberLazyOf"
 
 describe("Specialized lazyOf tests", () => {
@@ -62,6 +63,10 @@ describe("Specialized lazyOf tests", () => {
         test('1',  () => expect(bigIntLazyOf(1n,),).toStrictEqual(CommonLazy.ONE_BIGINT,),)
         test('2',  () => expect(bigIntLazyOf(2n,),).toStrictEqual(CommonLazy.TWO_BIGINT,),)
         test('3',  () => expect(bigIntLazyOf(3n,) === bigIntLazyOf(3n,),).toBeFalse(),)
+    },)
+    describe("date", () => {
+        test("invalid", () => expect(dateLazyOf(new Date("",),),).toStrictEqual(CommonLazy.INVALID_DATE,),)
+        test("epoch",   () => expect(dateLazyOf(new Date(0,),),).toStrictEqual(CommonLazy.EPOCH_DATE,),)
     },)
 
 },)

@@ -20,7 +20,7 @@ import {InitializedLazy} from "../InitializedLazy"
  */
 export function numberLazyOf<const T extends number, >(value: T,): Lazy<T>
 export function numberLazyOf(value: number,): Lazy<number> {
-    if (Number.isNaN(value))
+    if (Number.isNaN(value,))
         return CommonLazy.NAN
     if (value === Number.POSITIVE_INFINITY)
         return CommonLazy.POSITIVE_INFINITY
