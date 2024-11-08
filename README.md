@@ -16,13 +16,19 @@ This project only has the Javascript (with Typescript) uploaded.
 
 But other languages will be eventually added
 
-| Language                  |                                                                                           Published                                                                                            |
-|:--------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Javascript<br/>Typescript | [Published to npm](https://www.npmjs.com/package/@joookiwi/lazy)<br/>[![downloads](https://img.shields.io/npm/dt/@joookiwi/lazy.svg)](https://npm-stat.com/charts.html?package=@joookiwi/lazy) |
-| Java                      |                                                                                             Maven                                                                                              |
-| Kotlin                    |                      [Integrated in the language](https://kotlinlang.org/docs/delegated-properties.html#observable-properties)<br/>_(but common values are to be added)_                       |
-| PHP                       |                                                                                            Composer                                                                                            |
-| C#                        |                                                                                             Nuget                                                                                              |
+| Language                  |                                               Published                                               |
+|:--------------------------|:-----------------------------------------------------------------------------------------------------:|
+| Javascript<br/>Typescript | [![version][npm-image-link]][npm-link]<br/>[![downloads][npm-download-image-link]][npm-download-link] |
+| Java                      |                                                 Maven                                                 |
+| Kotlin                    |          [Integrated in the language][kotlin-lazy]<br/>_(but common values are to be added)_          |
+| PHP                       |                                               Composer                                                |
+| C#                        |                                                 Nuget                                                 |
+
+[npm-image-link]:          https://img.shields.io/npm/v/@joookiwi/lazy.svg?logo=npm&label=
+[npm-link]:                https://npmjs.org/package/@joookiwi/lazy
+[npm-download-image-link]: https://img.shields.io/npm/dt/@joookiwi/lazy.svg
+[npm-download-link]:       https://npm-stat.com/charts.html?package=@joookiwi/lazy
+[kotlin-lazy]:             https://kotlinlang.org/docs/delegated-properties.html#observable-properties
 
 ## Related projects
 
