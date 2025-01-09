@@ -191,7 +191,7 @@ export namespace CommonLazy {
     /** A {@link Lazy} for an empty {@link WeakSet} */
     export const EMPTY_WEAK_SET = lazy(() => Object.freeze(new WeakSet(),) as EmptyWeakSet,)
     /** A {@link Lazy} for an empty {@link Map} */
-    export const EMPTY_MAP = lazy(() => Object.freeze(new Map<any, never>(),) as EmptyMap,)
+    export const EMPTY_MAP = lazy(() => Object.freeze(new Map<never, never>(),) as EmptyMap,)
     /** A {@link Lazy} for an empty {@link WeakMap} */
     export const EMPTY_WEAK_MAP = lazy(() => Object.freeze(new WeakMap(),) as EmptyWeakMap,)
 
