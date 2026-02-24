@@ -47,17 +47,18 @@ You can contribute to my projects in 2 different ways
 
 | JS/TS              | Date                 | Quick note                                                                                          |
 |--------------------|----------------------|-----------------------------------------------------------------------------------------------------|
-| 1.7.1              | August 12th, 2025    | Dependencies update<br/>[type][type] (~~1.2.0~~ → 1.2.1)                                            |
+| 1.7.2              | Febuary 24th, 2025   | 2026 update<br/>[type][type] (~~1.2.1~~ → 1.2.2)                                                    |
+| 1.7.1              | August 12th, 2025    | [type][type] (~~1.2.0~~ → 1.2.1)                                                                    |
 | 1.7.0              | January 8th, 2025    | 2025 update<br/>[type][type] (~~1.1.0~~ → [1.2.0][ts-type-v1.2])                                    |
 | [1.6.0][js-v1.6]   | November 7th, 2024   | Addition of predefined `lazyOf` for the `Date`<br/>[type][type] (~~1.0.0~~ → [1.1.0][ts-type-v1.1]) |
 | [1.5.0][js-v1.5]   | July 21st, 2024      | Addition of predefined `lazyOf` for the `boolean`, `bigint` & `number`                              |
 | 1.4.0              | March 31st, 2024     | Addition of [type][type] to the dependency                                                          |
 | [1.3.0][js-v1.3]   | February 19th, 2024  | Standardization of the ~~BIG_INT~~ / BIGINT to only be BIGINT                                       |
-| 1.2.1              | December 4th, 2023   | Dependencies update                                                                                 |
+| 1.2.1              | December 4th, 2023   |                                                                                                     |
 | [1.2.0][js-v1.2]   | September 28th, 2023 | Addition of lazy "bigint" numbers<br/>Fix on the empty array to be `readonly []`                    |
 | [1.1.1][js-v1.1.1] | August 14th, 2023    | Relocation of the `lazy` & `lazyOf` methods in their own standalone file                            |
 | [1.1.0][js-v1.1]   | August 14th, 2023    | New [CommonLazy](https://github.com/joooKiwi/lazy/blob/main/javascript/src/CommonLazy.ts)           |
-| 1.0.1              | July 1st, 2023       | Dependencies update                                                                                 |
+| 1.0.1              | July 1st, 2023       |                                                                                                     |
 | 1.0.0              | June 28th, 2023      | The first implementation used in Javascript                                                         |
 
 <!-- Version references -->
@@ -71,6 +72,6 @@ You can contribute to my projects in 2 different ways
 
 [type]: https://github.com/joooKiwi/type
 [ts-type-v1.1]: https://github.com/joooKiwi/type/releases/tag/v1.1.0-ts
-[ts-type-v1.2]: https://github.com/joooKiwi/type/releases/tag/v1.2.1-ts
+[ts-type-v1.2]: https://github.com/joooKiwi/type/releases/tag/v1.2.2-ts
 
 <!-- Version references -->
