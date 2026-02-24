@@ -1,6 +1,6 @@
 {
   "name": "@joookiwi/lazy",
-   "version": "1.7.1",
+  "version": "1.7.1",
   "description": "A Javascript implementation based of the Kotlin lazy with reusable fields",
 
   "scripts": {
@@ -13,7 +13,7 @@
 
     "test":                "jest",
     "test-with-coverage":  "jest --coverage",
-    "test-initiazed":      "jest --testNamePattern=InitializedLazyTest",
+    "test-initialized": "jest --testNamePattern=InitializedLazyTest",
     "test-implementation": "jest --testNamePattern=LazyImplementationTest",
 
     "test-pack":    "npm pack --dry-run",
