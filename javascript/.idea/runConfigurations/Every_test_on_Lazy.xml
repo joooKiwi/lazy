@@ -1,7 +1,8 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Every test on Lazy" type="CompoundRunConfigurationType">
-    <toRun name="Every tests (InitializedLazy)" type="JavaScriptTestRunnerJest" />
-    <toRun name="Every tests (LazyImplementation)" type="JavaScriptTestRunnerJest" />
+    <toRun name="Tests (InitializedLazy)" type="JavaScriptTestRunnerJest" />
+    <toRun name="Tests (LazyImplementation)" type="JavaScriptTestRunnerJest" />
+    <toRun name="Tests on specialized &quot;lazyOf&quot;" type="JavaScriptTestRunnerJest" />
     <method v="2" />
   </configuration>
 </component>
