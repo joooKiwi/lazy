@@ -1,6 +1,6 @@
 {
   "name": "@joookiwi/lazy",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "A Javascript implementation based of the Kotlin lazy with reusable fields",
 
   "scripts": {
