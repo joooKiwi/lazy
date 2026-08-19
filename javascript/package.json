@@ -9,10 +9,11 @@
     "build-cjs":   "tsc --project tsconfig.cjs.json",
     "build-types": "tsc --project tsconfig.types.json",
 
-    "test":                "jest",
-    "test-with-coverage":  "jest --coverage",
-    "test-initialized":    "jest --testNamePattern=InitializedLazyTest",
-    "test-implementation": "jest --testNamePattern=LazyImplementationTest",
+    "test":                "vitest run",
+    "test-with-coverage":  "vitest run --coverage",
+    "test-initialized":    "vitest run --testNamePattern=InitializedLazyTest",
+    "test-implementation": "vitest run --testNamePattern=LazyImplementationTest",
+    "see-import-duration": "vitest --experimental.importDurations.print",
 
     "test-pack":    "npm pack --dry-run",
     "test-publish": "npm publish --@access=public --dry-run",
@@ -65,13 +66,12 @@
     "@joookiwi/type": "^1.2.2"
   },
   "devDependencies": {
-    "@types/jest":            "^30.0.0",
-    "@types/node":            "^26.2.0",
-    "del-cli":                "^7.0.0",
-    "jest-environment-jsdom": "^30.4.1",
-    "jest-extended":          "^7.0.0",
-    "ts-jest":                "^29.4.12",
-    "ts-node":                "^10.9.2",
-    "typescript":             "^7.0.2"
+    "@types/node":         "^26.2.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "del-cli":             "^7.0.0",
+    "jest-extended":       "^7.0.0",
+    "ts-node":             "^10.9.2",
+    "typescript":          "^7.0.2",
+    "vitest":              "^4.1.11"
   }
 }
