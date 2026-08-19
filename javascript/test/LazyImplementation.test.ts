@@ -10,6 +10,8 @@
 //  - https://github.com/joooKiwi/enumeration
 //··························································
 
+import {describe, expect, test} from "vitest"
+
 import {LazyImplementation} from "../src/LazyImplementation"
 import {everyConstant}      from "./constants"
 
@@ -23,7 +25,7 @@ describe("LazyImplementationTest", () => {
             // @ts-expect-error
             expect(() => new LazyImplementation(it,),).toThrow(expectedThrowMessage,),),)
     },)
-    describe("valid type", () => describe.each(everyConstant,)("%s", () => {
+    describe("valid type", () => describe.each(everyConstant,)("%s", ({value: it,},) => {
         test("value", () => expect(new LazyImplementation(() => it,).value,).toBe(it,),)
         describe("is initialized ", () => {
             test("before get", () => expect(new LazyImplementation(() => it,).isInitialized,).toBeFalse(),)
