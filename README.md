@@ -47,6 +47,7 @@ You can contribute to my projects in 2 different ways
 
 | JS/TS              | Date                 | Quick note                                                                                          |
 |--------------------|----------------------|-----------------------------------------------------------------------------------------------------|
+| [1.8.0][js-v1.8]   | October 21st, 2026   | Upgrade on the TypeScript (v5 → v7)<br/>[type][type] (~~1.2.2~~ → [1.3.0][ts-type-v1.3])                                                                                                    |
 | 1.7.3              | August 12th, 2026    |                                                                                                     |
 | 1.7.2              | Febuary 24th, 2026   | 2026 update<br/>[type][type] (~~1.2.1~~ → 1.2.2)                                                    |
 | 1.7.1              | August 12th, 2025    | [type][type] (~~1.2.0~~ → 1.2.1)                                                                    |
@@ -70,9 +71,11 @@ You can contribute to my projects in 2 different ways
 [js-v1.3]:   https://github.com/joooKiwi/lazy/releases/tag/v1.3.0-js
 [js-v1.5]:   https://github.com/joooKiwi/lazy/releases/tag/v1.5.0-js
 [js-v1.6]:   https://github.com/joooKiwi/lazy/releases/tag/v1.6.0-js
+[js-v1.8]:   https://github.com/joooKiwi/lazy/releases/tag/v1.8.0-js
 
 [type]: https://github.com/joooKiwi/type
 [ts-type-v1.1]: https://github.com/joooKiwi/type/releases/tag/v1.1.0-ts
 [ts-type-v1.2]: https://github.com/joooKiwi/type/releases/tag/v1.2.2-ts
+[ts-type-v1.3]: https://github.com/joooKiwi/type/releases/tag/v1.3.0-ts
 
 <!-- Version references -->
