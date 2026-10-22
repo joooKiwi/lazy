@@ -1,20 +1,19 @@
 {
   "name": "@joookiwi/lazy",
-  "version": "1.7.3",
+  "version": "1.8.0",
   "description": "A Javascript implementation based of the Kotlin lazy with reusable fields",
 
   "scripts": {
     "clear-dist-folder": "del-cli dist/",
     "build-esm":   "tsc --project tsconfig.esm.json",
     "build-cjs":   "tsc --project tsconfig.cjs.json",
-    "build-amd":   "tsc --project tsconfig.amd.json",
-    "build-umd":   "tsc --project tsconfig.umd.json",
     "build-types": "tsc --project tsconfig.types.json",
 
-    "test":                "jest",
-    "test-with-coverage":  "jest --coverage",
-    "test-initialized": "jest --testNamePattern=InitializedLazyTest",
-    "test-implementation": "jest --testNamePattern=LazyImplementationTest",
+    "test":                "vitest run",
+    "test-with-coverage":  "vitest run --coverage",
+    "test-initialized":    "vitest run --testNamePattern=InitializedLazyTest",
+    "test-implementation": "vitest run --testNamePattern=LazyImplementationTest",
+    "see-import-duration": "vitest --experimental.importDurations.print",
 
     "test-pack":    "npm pack --dry-run",
     "test-publish": "npm publish --@access=public --dry-run",
@@ -64,16 +63,15 @@
   "author": "JóôòKiwi",
   "license": "MIT",
   "dependencies": {
-    "@joookiwi/type": "^1.2.2"
+    "@joookiwi/type": "^1.3.0"
   },
   "devDependencies": {
-    "@types/jest":            "^30.0.0",
-    "@types/node":            "^26.2.0",
-    "del-cli":                "^7.0.0",
-    "jest-environment-jsdom": "^30.4.1",
-    "jest-extended":          "^7.0.0",
-    "ts-jest":                "^29.4.12",
-    "ts-node":                "^10.9.2",
-    "typescript":             "^5.9.3"
+    "@types/node":         "^26.6.5",
+    "@vitest/coverage-v8": "^5.0.5",
+    "del-cli":             "^8.0.1",
+    "jest-extended":       "^7.0.0",
+    "ts-node":             "^10.9.2",
+    "typescript":          "^7.0.2",
+    "vitest":              "^5.0.5"
   }
 }

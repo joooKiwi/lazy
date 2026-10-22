@@ -10,6 +10,8 @@
 //  - https://github.com/joooKiwi/enumeration
 //··························································
 
+import {describe, expect, test} from "vitest"
+
 import {CommonLazy}    from "../src/CommonLazy"
 import {bigIntLazyOf}  from "../src/method/bigIntLazyOf"
 import {booleanLazyOf} from "../src/method/booleanLazyOf"

@@ -10,6 +10,8 @@
 //  - https://github.com/joooKiwi/enumeration
 //··························································
 
+import {describe, expect, test} from "vitest"
+
 import {InitializedLazy} from "../src/InitializedLazy"
 import {everyConstant}   from "./constants"
 
